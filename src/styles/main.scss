@@ -1,0 +1,74 @@
+// Import partials
+@use "./header";
+@use "./navbar";
+
+// Color variables
+$primary-bg: #f9f9f9;
+$nav-bg: #333;
+$nav-color: #fff;
+$btn-danger-bg: #ff5555;
+$btn-default-bg: $nav-bg;
+$btn-color: #fff;
+
+// Global styles
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: $primary-bg;
+}
+
+// Navigation styles
+nav {
+  background: $nav-bg;
+  color: $nav-color;
+  padding: 1rem;
+
+  a {
+    color: $nav-color;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+
+  button {
+    background: $btn-danger-bg;
+    border: none;
+    color: $btn-color;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+}
+
+// Reusable button placeholder
+%btn {
+  border: none;
+  color: $btn-color;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+// Login form styles
+.login-form {
+  max-width: 300px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: $btn-color; // white background
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    @extend %btn;
+    width: 100%;
+    background: $btn-default-bg;
+  }
+}

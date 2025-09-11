@@ -1,0 +1,52 @@
+// Navbar Styles
+.navbar {
+  width: 100%;             // fills header width
+  background: #333;        // dark background
+  padding: 0.8rem 0;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+
+  // Links and buttons share some base styles
+  a,
+  button {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.3s;
+  }
+
+  // Link hover effect
+  a:hover {
+    background: #444;
+  }
+
+  // Button-specific styles
+  button {
+    background: #ff5555;
+    &:hover {
+      background: #e04444;
+    }
+  }
+
+  // Responsive for small screens
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: stretch;  // forces items to span full width
+    gap: 0.5rem;
+
+    a,
+    button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
