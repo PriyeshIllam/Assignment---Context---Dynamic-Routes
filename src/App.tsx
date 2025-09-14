@@ -4,6 +4,7 @@ import LoginForm from "./components/LoginForm";
 import Header from "./components/Header";
 import Categories from "./components/Categories";
 import CategoryDetail from "./components/CategoryDetail";
+import MealDetail from "./components/MealDetail"; // <-- import MealDetail
 
 // Simple Home page
 const Home = () => {
@@ -38,6 +39,7 @@ const App = () => {
               <Route path="/profile" element={<Profile />} />
               <Route path="/categories" element={<Categories />} />
               <Route path="/category/:name" element={<CategoryDetail />} />
+              <Route path="/meal/:id" element={<MealDetail />} />
             </Routes>
           </main>
         </div>
