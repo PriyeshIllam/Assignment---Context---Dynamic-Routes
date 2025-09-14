@@ -4,7 +4,8 @@ import LoginForm from "./components/LoginForm";
 import Header from "./components/Header";
 import Categories from "./components/Categories";
 import CategoryDetail from "./components/CategoryDetail";
-import MealDetail from "./components/MealDetail"; // <-- import MealDetail
+import MealDetail from "./components/MealDetail";
+import Profile from "./components/Profile";
 
 // Simple Home page
 const Home = () => {
@@ -12,16 +13,6 @@ const Home = () => {
   return <h1>Welcome {user?.name || "Guest"}!</h1>;
 };
 
-// Profile page showing user's favourites
-const Profile = () => {
-  const { user, favourites } = useUserContext();
-  return (
-    <div>
-      <h2>{user?.name}'s Profile</h2>
-      <p>Saved items: {favourites.length ? favourites.join(", ") : "None"}</p>
-    </div>
-  );
-};
 
 
 // Main App component
