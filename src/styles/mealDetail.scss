@@ -1,0 +1,93 @@
+.back-btn {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #555;
+  }
+}
+
+.meal-detail-page {
+  padding: 2rem;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .meal-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    img {
+      width: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .meal-info {
+      flex: 1;
+
+      p {
+        margin: 0.5rem 0;
+      }
+
+      .fav-btn {
+        margin-top: 1rem;
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+        border: 1px solid #ff5555;
+        background: white;
+        color: #ff5555;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #ffeaea;
+        }
+
+        &.active {
+          background: #ff5555;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .meal-instructions,
+  .meal-ingredients,
+  .meal-video {
+    margin-bottom: 2rem;
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #ff5555;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .meal-video a {
+    color: #0077ff;
+    text-decoration: underline;
+  }
+}
