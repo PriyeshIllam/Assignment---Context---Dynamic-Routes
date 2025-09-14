@@ -6,13 +6,7 @@ import Categories from "./components/Categories";
 import CategoryDetail from "./components/CategoryDetail";
 import MealDetail from "./components/MealDetail";
 import Profile from "./components/Profile";
-
-// Simple Home page
-const Home = () => {
-  const { user } = useUserContext();
-  return <h1>Welcome {user?.name || "Guest"}!</h1>;
-};
-
+import Home from "./components/Home"
 
 
 // Main App component
