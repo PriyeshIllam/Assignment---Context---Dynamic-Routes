@@ -1,6 +1,8 @@
 // Import partials
 @use "./header";
 @use "./navbar";
+@use "./categories";
+@use "./categoryDetail";
 
 // Color variables
 $primary-bg: #f9f9f9;
