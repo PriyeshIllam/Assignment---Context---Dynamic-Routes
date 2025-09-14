@@ -35,9 +35,22 @@ const CategoryDetail = () => {
 
   if (loading) return <p>Loading meals...</p>;
 
+  // Get favourite meal names for this category
+  const favouriteMealNames = meals
+    .filter((meal) => favourites.includes(meal.idMeal))
+    .map((meal) => meal.strMeal);
+
   return (
     <div className="category-detail-page">
       <h1>{name} Meals</h1>
+
+      {/* Favourite Meals Line */}
+      {favouriteMealNames.length > 0 && (
+        <p className="favourite-categories">
+          ⭐ Your favourite meals: {favouriteMealNames.join(", ")}
+        </p>
+      )}
+
       <div className="meals-grid">
         {meals.map((meal) => (
           <div key={meal.idMeal} className="meal-card">
