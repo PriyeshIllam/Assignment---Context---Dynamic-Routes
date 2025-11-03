@@ -19,7 +19,7 @@
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem ;
     border-radius: 6px;
     transition: background 0.3s;
   }
@@ -40,13 +40,15 @@
   // Responsive for small screens
   @media (max-width: 600px) {
     flex-direction: column;
-    align-items: stretch;  // forces items to span full width
-    gap: 0.5rem;
 
     a,
     button {
       width: 100%;
       text-align: center;
+    }
+
+    a:hover {
+      width: 100%;
     }
   }
 }

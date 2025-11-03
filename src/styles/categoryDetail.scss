@@ -9,6 +9,8 @@
   .meals-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: calc((250px + 1.5rem) * 4); // 4 items + gaps
+    margin: 0 auto;
     gap: 1.5rem;
   }
 
