@@ -7,6 +7,14 @@
 @use "./profile";
 @use "./home";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 // Color variables
 $primary-bg: #f9f9f9;
 $nav-bg: #333;
